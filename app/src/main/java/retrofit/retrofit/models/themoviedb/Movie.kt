@@ -1,4 +1,4 @@
-package retrofit.retrofit.models
+package retrofit.retrofit.models.themoviedb
 
 import com.google.gson.annotations.SerializedName
 

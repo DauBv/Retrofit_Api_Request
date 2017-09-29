@@ -1,4 +1,4 @@
-package retrofit.retrofit.models
+package retrofit.retrofit.models.mushtaq
 
 import com.google.gson.annotations.SerializedName
 

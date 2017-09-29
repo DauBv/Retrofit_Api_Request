@@ -7,8 +7,7 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
 import retrofit.retrofit.R
-import retrofit.retrofit.models.Movie
-import retrofit.retrofit.views.adapter.MoviesAdapter.MovieViewHolder
+import retrofit.retrofit.models.themoviedb.Movie
 import android.view.LayoutInflater
 
 

@@ -12,7 +12,7 @@ import android.widget.Toast
 import retrofit.retrofit.R
 import retrofit.retrofit.api.ApiClient
 import retrofit.retrofit.api.ApiInterface
-import retrofit.retrofit.models.MoviesResponse
+import retrofit.retrofit.models.themoviedb.MoviesResponse
 import retrofit.retrofit.views.adapter.MoviesAdapter
 import retrofit2.Call
 import retrofit2.Callback

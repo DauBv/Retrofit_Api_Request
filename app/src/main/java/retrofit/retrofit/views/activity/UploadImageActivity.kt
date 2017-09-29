@@ -19,8 +19,7 @@ import okhttp3.RequestBody
 import retrofit.retrofit.R
 import retrofit.retrofit.api.ApiClient
 import retrofit.retrofit.api.ApiInterface
-import retrofit.retrofit.models.MoviesResponse
-import retrofit.retrofit.models.ServerResponse
+import retrofit.retrofit.models.mushtaq.ServerResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -98,7 +97,7 @@ class UploadImageActivity : AppCompatActivity() {
         val fileToUpload = MultipartBody.Part.createFormData("file", file.getName(), requestBody)
         val filename = RequestBody.create(MediaType.parse("text/plain"), file.getName())
 
-        val apiService = ApiClient().getRetrofit()!!.create(ApiInterface::class.java)
+        val apiService = ApiClient().getRetrofit().create(ApiInterface::class.java)
         val call = apiService.uploadFile(fileToUpload, filename)
         call.enqueue(object : Callback<ServerResponse> {
             override fun onFailure(call: Call<ServerResponse>?, t: Throwable?) {
