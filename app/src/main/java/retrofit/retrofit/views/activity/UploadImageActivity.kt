@@ -5,9 +5,9 @@ import android.app.ProgressDialog
 import android.content.Context
 import android.content.Intent
 import android.graphics.BitmapFactory
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
+import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
@@ -15,7 +15,6 @@ import android.widget.Toast
 import okhttp3.MediaType
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
-
 import retrofit.retrofit.R
 import retrofit.retrofit.api.ApiClient
 import retrofit.retrofit.api.ApiInterface
@@ -85,6 +84,7 @@ class UploadImageActivity : AppCompatActivity() {
             Toast.makeText(this, "Something went wrong", Toast.LENGTH_LONG).show()
         }
     }
+
 
     fun uploadFile() {
         progressDialog!!.show()

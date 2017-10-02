@@ -2,13 +2,12 @@ package retrofit.retrofit.views.activity
 
 import android.content.Context
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.widget.Toast
-
 import retrofit.retrofit.R
 import retrofit.retrofit.api.ApiClient
 import retrofit.retrofit.api.ApiInterface
@@ -37,6 +36,7 @@ class RetrofitGetActivity : AppCompatActivity() {
             override fun onFailure(call: Call<MoviesResponse>?, t: Throwable?) {
                 Log.e(TAG, "error" + t.toString())
             }
+
 
             override fun onResponse(call: Call<MoviesResponse>?, response: Response<MoviesResponse>?) {
                 val movies = response!!.body().Results

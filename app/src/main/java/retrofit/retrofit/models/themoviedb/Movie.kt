@@ -1,8 +1,7 @@
 package retrofit.retrofit.models.themoviedb
 
 import com.google.gson.annotations.SerializedName
-
-import java.util.ArrayList
+import java.util.*
 
 /**
  * Created by DauBV on 25/09/2017.
@@ -86,4 +85,6 @@ class Movie {
         set(value) {
             voteAverage = value
         }
+
+
 }

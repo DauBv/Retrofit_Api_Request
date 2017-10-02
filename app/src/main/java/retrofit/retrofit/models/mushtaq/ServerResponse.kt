@@ -6,6 +6,7 @@ import com.google.gson.annotations.SerializedName
  * Created by daubv on 25/09/2017.
  */
 
+
 class ServerResponse {
     @SerializedName("success")
     var success: Boolean = false

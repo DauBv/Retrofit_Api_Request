@@ -45,4 +45,6 @@ class MoviesResponse {
         set(value) {
             totalPages = value
         }
+
+
 }

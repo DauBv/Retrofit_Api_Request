@@ -16,3 +16,4 @@ class User(name: String, job: String) {
     @SerializedName("createdAt")
     var createdAt: String? = null
 }
+

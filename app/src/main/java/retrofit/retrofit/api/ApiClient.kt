@@ -1,9 +1,9 @@
 package retrofit.retrofit.api
 
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 
 /**
@@ -41,4 +41,5 @@ class ApiClient {
         val client = OkHttpClient.Builder().addInterceptor(interceptor).build()
         return Retrofit.Builder().baseUrl(BASE_URL1).addConverterFactory(GsonConverterFactory.create()).client(client).build()
     }
+
 }

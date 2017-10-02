@@ -2,13 +2,13 @@ package retrofit.retrofit.views.adapter
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
 import retrofit.retrofit.R
 import retrofit.retrofit.models.themoviedb.Movie
-import android.view.LayoutInflater
 
 
 /**
@@ -57,4 +57,5 @@ class MoviesAdapter : RecyclerView.Adapter<MoviesAdapter.MovieViewHolder> {
         val view = LayoutInflater.from(parent!!.getContext()).inflate(rowLayout, parent, false)
         return MovieViewHolder(view)
     }
+
 }
